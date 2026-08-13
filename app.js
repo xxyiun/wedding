@@ -271,7 +271,20 @@ music.addEventListener('error', () => {
   if (currentMusicMode === 'file') startSynthMusic()
 })
 musicButton.addEventListener('click', () => { isMusicPlaying() ? pauseMusic() : playMusic() })
-window.setTimeout(() => { playMusic() }, 0)
+
+// 首次点击/触摸页面任意位置时自动播放背景音乐（浏览器要求有用户手势才能出声）
+let autoStarted = false
+const startMusicOnFirstGesture = (event) => {
+  if (autoStarted) return
+  // 如果首次手势落在音乐按钮上，交给按钮自己的 toggle 处理，避免启动后立刻又被暂停
+  if (musicButton.contains(event.target)) return
+  autoStarted = true
+  playMusic()
+  document.removeEventListener('pointerdown', startMusicOnFirstGesture)
+  document.removeEventListener('keydown', startMusicOnFirstGesture)
+}
+document.addEventListener('pointerdown', startMusicOnFirstGesture)
+document.addEventListener('keydown', startMusicOnFirstGesture)
 
 document.addEventListener('visibilitychange', () => {
   if (document.hidden) {
