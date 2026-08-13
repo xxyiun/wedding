@@ -1,8 +1,8 @@
 const weddingConfig = {
-  groom: 'WEDDING',
-  bride: 'INVITATION',
-  groomLatin: '肖雨鑫',
-  brideLatin: '何东宇',
+  groom: '肖雨鑫',
+  bride: '何东宇',
+  groomLatin: 'WEDDING',
+  brideLatin: 'INVITATION',
   weddingDate: '2026-09-09T00:00:00+08:00',
   dateDot: '2026 · 09 · 09',
   dateCn: '2026年9月9日 · 星期三',
