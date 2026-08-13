@@ -16,7 +16,7 @@ const weddingConfig = {
     { label: '签到', time: '18:30', description: '领取今日任务，与老朋友相见' },
     { label: '仪式', time: '19:00', description: '见证拥抱、誓言与交换戒指' },
     { label: '喜宴', time: '19:20', description: '共享一场丰盛的秋日宴席' },
-    { label: '合影', time: '待确认', description: '保存这一份快乐存档' },
+    { label: '合影', time: '20:30', description: '保存这一份快乐存档' },
   ],
 }
 
