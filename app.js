@@ -9,9 +9,9 @@ const weddingConfig = {
   calendarMonth: 'SEP',
   calendarDay: '09',
   calendarYear: '2026',
-  venue: '德化益源大酒家（丁溪店）',
+  venue: '德化益源大酒家（丁溪旗舰店）',
   venueShort: '益源大酒家',
-  navigationUrl: 'https://uri.amap.com/search?keyword=%E5%BE%B7%E5%8C%96%E7%9B%8A%E6%BA%90%E5%A4%A7%E9%85%92%E5%AE%B6%EF%BC%88%E4%B8%81%E6%BA%AA%E5%BA%97%EF%BC%89&src=stardew-wedding&callnative=1',
+  navigationUrl: 'https://uri.amap.com/search?keyword=%E5%BE%B7%E5%8C%96%E7%9B%8A%E6%BA%90%E5%A4%A7%E9%85%92%E5%AE%B6%EF%BC%88%E4%B8%81%E6%BA%AA%E6%97%97%E8%88%B0%E5%BA%97%EF%BC%89&src=stardew-wedding&callnative=1',
   schedule: [
     { label: '签到', time: '18:30', description: '领取今日任务，与老朋友相见' },
     { label: '仪式', time: '19:00', description: '见证拥抱、誓言与交换戒指' },
